@@ -1,10 +1,10 @@
 import { Container } from 'react-bootstrap'
 
-export default function Projects() {
+export default function Resume() {
   return (
     <>
     <Container>
-        Projects:
+        Resume
     </Container>
     </>
   );
