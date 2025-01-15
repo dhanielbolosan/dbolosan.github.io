@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import { Image, Container } from 'react-bootstrap'
-import { Github, Linkedin, Envelope } from 'react-bootstrap-icons'
+import { Github, Linkedin, Envelope, ArrowRight } from 'react-bootstrap-icons'
 // import ProjectCarousel from '@/components/ProjectCarousel'
 
 export default function Home() {
@@ -23,21 +25,35 @@ export default function Home() {
       <div className="about-me">
         <Container>
           <h2>About Me</h2>
-          <Image src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" style={{ width: '250px', height: '250px' }} alt="picture of me" roundedCircle />
-          <p>BlahBlahBlah</p>
+          {/* <Image src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" style={{ width: '250px', height: '250px' }} alt="picture of me" roundedCircle /> */}
+          <div className="about-me-par">
+            <p style={{fontSize: '5vw'}}>Hello! I'm Dhaniel Bolosan, a student and aspiring software engineer with an interest in both game design and web development.</p>
+          </div>
         </Container>
      </div>
       <div className="projects">
-        <h2>Projects</h2>
+        <Container>
+          <div className="project-header" style={{ width: '100%', display: 'flex', flexDirection: 'row' }}>
+            <h2 className="me-auto">Projects</h2>
+            <a href="/projects" className="view-more">
+              <h2 className="ms-auto">
+                View More <ArrowRight />
+              </h2>
+            </a>
+          </div>
+        </Container>
         {/* <ProjectCarousel /> */}
       </div>
       <div className="resume">
-        <h2>Resume</h2>
+        <Container>
+          <h2>Resume</h2>
+        </Container>
       </div>
       <div className="contact">
-        <h2>Contact Me</h2>
+        <Container>
+          <h2>Contact Me</h2>
+        </Container>
       </div>
-
     </>
   );
 }

@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "holderjs": "^2.9.9",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.7",
+    "react-bootstrap-icons": "^1.11.5",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {

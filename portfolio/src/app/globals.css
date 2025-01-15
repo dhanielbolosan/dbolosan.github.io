@@ -57,9 +57,39 @@ body .navbar {
   border: solid 1px black;
 }
 
+.about-me-par {
+  text-align: center;
+}
+
 .projects {
   height: 100vh;
   border: solid 1px black;
+}
+
+.view-more {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative
+}
+
+.view-more:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  border: solid 1px black;
+}
+
+.view-more h2 {
+  margin: 0;
+}
+
+.view-more svg {
+  margin-left: 8px;
 }
 
 .resume {
