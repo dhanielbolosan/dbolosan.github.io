@@ -4,6 +4,7 @@
 
 import { Image, Container } from 'react-bootstrap'
 import { Github, Linkedin, Envelope, ArrowRight } from 'react-bootstrap-icons'
+import ContactMe from '@/components/ContactMe'
 // import ProjectCarousel from '@/components/ProjectCarousel'
 
 export default function Home() {
@@ -52,6 +53,7 @@ export default function Home() {
       <div className="contact">
         <Container>
           <h2>Contact Me</h2>
+          <ContactMe />
         </Container>
       </div>
     </>
